@@ -1,0 +1,385 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+* {
+    font-family: $font-family;
+    color:$original-orange;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @include header-text-size;
+}
+
+.navbar {
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 60px;
+    width: 100%;
+    padding-right: 12px;
+    display: flex;
+}
+
+.margin {
+    padding-right: 22px;
+}
+
+.black {
+    @include black-text;
+}
+
+input {
+    border: none;
+    flex-grow: 1;
+    margin-right: 15px;
+    font-size: 18px;
+    height: 48px;
+    width: 100%;
+    &::placeholder {
+        color: $original-orange;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid $original-orange;
+    padding-top: 7.9px;
+    padding-bottom: 8.01px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 15px;
+    width: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.after {
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 12px;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    height: 124px;
+    width: 165px;
+    object-position: center 10%;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+td {
+    @include td-textsize;
+    width: 100%;
+}
+
+table {
+    margin-top: 6px;
+    margin-left: 12px;
+    margin-right: 15px;
+}
+
+.space-after {
+    margin-bottom: 6px;
+}
+
+h2 {
+    @include h2-text;
+}
+
+.link-container {
+    margin-top: 16px;
+    margin-left: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 2px solid $inactive-link-underline;
+}
+
+a {
+    text-decoration: none;
+    color: $inactive-link-textcolor;
+    &:hover {
+        border-bottom: 3px solid $original-orange;
+        color:black;
+    }
+    &:active{
+        border-bottom: 3px solid $original-orange;
+        color:black;
+    }
+    padding-bottom: 8px;
+}
+
+.active-link {
+    border-bottom: 3px solid $original-orange;
+    color:black;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 4px;
+}
+ .date {
+    justify-content: center;
+ }
+
+.td-svg {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9px;
+}
+
+.group-left {
+    @include td-textsize-tickets;
+    height: 37px;
+}
+
+.group-right {
+    display: flex;
+    @include td-textsize-tickets;
+    width: 85px;
+}
+
+.group {
+    margin-top: 100px;
+    margin-left: 27px;
+    margin-right: 3px;
+    margin-bottom: 100px;
+}
+
+.liketablerows {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.lightgray {
+    color: $inactive-link-textcolor;
+}
+
+.seniors {
+    color: $inactive-link-textcolor;
+    font-size: 12px;
+    display: block;
+}
+
+.line {
+    @include line;
+}
+
+.total-text-style {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27px;
+    margin-right: 3px;
+    margin-top: 4px;
+    
+}
+
+.total-right {
+    @include td-textsize-tickets;
+    width: 85px;
+    text-align: center;
+}
+
+.continue-to-payment {
+    @include button-payment;
+    margin: 21px auto;
+    display: block;
+}
+
+.homepage-img {
+    margin-top: 0;
+    margin-bottom: 0;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    object-position: center 10%;
+
+}
+
+.bigtext {
+    @include biggest-text-size;
+}
+
+.text-container {
+    margin: 12px auto 12px 13px;
+}
+
+.pre-text {
+    color: $menu-site-gray-textcolor;
+    font-size: 10px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-date-text {
+    @include header-text-size;
+    height: 36px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu-after-text {
+    color: $menu-site-gray-textcolor;
+    font-size: 10px;
+    height: 18px;
+}
+
+.planyourvisit-button {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-small-text {
+    @include td-textsize;
+    color: $original-orange;
+}
+
+.menu-page-margins {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-page-groups {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.active {
+    position: fixed;
+    left: 80%;
+     
+    input {
+        margin-top: 20px;
+        border: 2px solid #FCFCFC;;
+        flex-grow: 1;
+        margin-right: 15px;
+        font-size: 18px;
+        height: 42px;
+        width: 225px;
+        background-color: $original-orange;
+        &::placeholder {
+            color: white;
+            background-color: $original-orange;
+        }
+    }
+    .continue-to-payment {
+        margin-left: 100px;
+    }
+    ul {
+        left: 0;
+        width: 80%;
+    }
+    li {
+        display: flex;
+        div {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+        }
+        text-align: center;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }   
+    a {
+       height: 30px;
+       margin-top: 20px;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    left: -10000px; 
+    top: 0;
+    bottom: 0;
+    background-color: $original-orange; 
+    li {
+        display: block;
+        margin: 0 8px;
+        text-align: center;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    a {
+        color: white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        margin-left: 12px;
+        margin-right: 12px;
+        height: 60px;
+        width: 100%;
+        padding-right: 12px;
+        display: flex;
+        ul {
+            float:right;
+        }
+    }
+    table {
+            display: inline-block;
+        td {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .space-after {
+        padding-left: 12px;
+    }
+
+    .liketablerows {
+        justify-content: center;
+    }
+    .group-left {
+        width: 150px;
+    }
+}
+
+.padding {
+    margin-top: 15px;
+}

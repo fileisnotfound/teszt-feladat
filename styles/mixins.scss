@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "variables.scss";
+
+@mixin text-color {
+    color: $original-orange;
+}
+
+@mixin header-text-size {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin black-text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin td-textsize {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin h2-text {
+    font-size: 18px;;
+    color: #000;
+    margin-bottom: 0px;
+    margin-left: 12px;
+}
+
+@mixin td-textsize-tickets {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+}
+
+@mixin line {
+    border-bottom: 2px solid $original-orange;
+    margin-left: 15px;
+    margin-right: 12px;
+    width: auto;
+}
+
+@mixin button-payment {
+    color: white;
+    background-color: $original-orange;
+    border: 1px solid $original-orange;
+    width: 248px;
+    height: 42px;
+}
+
+@mixin biggest-text-size {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
